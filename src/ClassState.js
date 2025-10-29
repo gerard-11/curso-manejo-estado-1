@@ -2,12 +2,12 @@ import React from 'react'
 import {Loading} from './Loading';
 
 
+
 const SECURITY_CODE= 'paradigma';
 
 class ClassState extends React.Component{ // es la clase que nosa da react para crear componentes, todos los componentes de clase heredan de react.component para poder usar estado, props y metodos del ciclo de vida
     constructor(props){
         super(props); // necesario para usar this.props
-
         this.state={
             value: '',
             error: false,
@@ -15,6 +15,7 @@ class ClassState extends React.Component{ // es la clase que nosa da react para 
             confirm:false,
         }
     }
+
 
     componentDidUpdate(){
         console.log('actualizacion')
